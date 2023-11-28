@@ -3,11 +3,7 @@ from StoreApp.models import Departamento
 
 # Create your views here.
 def index(request):
-    departamentos = Departamento.objects.all()
-    context = {
-        'departamento' : departamentos
-    }
-    return render(request, 'index.html', context)
+    return render(request, 'index.html')
 
 def produto_lista(request):
     return render(request, 'produtos.html')
