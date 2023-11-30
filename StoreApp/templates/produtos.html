@@ -23,6 +23,8 @@
                     <!-- Inicio Produtos -->
                     {% for produto in produtos %}
                     {% include 'includes/card_produto.html' %}
+                    {% empty %}
+                    <b> Nenhum Produto Encontrado ! </b>
                     {% endfor %}
                     <!-- termino produtos-->
                 </div>

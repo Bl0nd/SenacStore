@@ -22,13 +22,9 @@
                     
                     
                     <!-- Inicio Produtos -->
+                    {% for produto in produtos %}
                     {% include 'includes/card_produto.html' %}
-                    <!---->
-                    {% include 'includes/card_produto.html' %}
-                    <!-------->
-                    {% include 'includes/card_produto.html' %}
-                    <!-------->
-                    {% include 'includes/card_produto.html' %}
+                    {% endfor %}
                     <!-- termino produtos-->
                 </div>
             </div>
