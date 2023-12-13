@@ -15,7 +15,6 @@
                 </div>
             </div>
         </header>
-
         <!-- Section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
@@ -30,9 +29,10 @@
                     {% csrf_token %}
                     <div class="col-md-6 offset-md-3">
                     {{ form_cadastro|crispy }}
-
                         <input type="submit" value="Enviar" class="btn btn-primary">
+                    </div>
                 </form>
+                
             </div>
         </section>
 
