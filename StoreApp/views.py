@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 from StoreApp.models import Departamento, Produto
-from StoreApp.forms import ClienteForm, ContatoForm
+from StoreApp.forms import ContatoForm, ClienteForm
 
 
 # Create your views here.

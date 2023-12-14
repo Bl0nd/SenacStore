@@ -1,9 +1,9 @@
 from django import forms
 from StoreApp.models import Cliente
 
-class ContatoFrom(forms.Form):
+class ContatoForm(forms.Form):
     nome = forms.CharField()
-    email = forms.CharField()
+    email = forms.EmailField()
     telefone = forms.CharField(required=False, widget=forms.TextInput(attrs={'class':'phone_with_ddd'}))
     assunto = forms.CharField()
     mensagem = forms.CharField(widget=forms.Textarea)

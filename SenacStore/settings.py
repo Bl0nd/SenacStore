@@ -18,6 +18,8 @@ import pymysql
 pymysql.version_info = (1, 4, 6, 'final', 0)
 pymysql.install_as_MySQLdb()
 
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -49,9 +51,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'StoreApp',
 	'crispy_forms',
-	'crispy_bootstrap5',
+	    'crispy_bootstrap5',
     'cloudinary_storage',
-	'cloudinary',
+	    'cloudinary',
     'whitenoise.runserver_nostatic' 
 ]
 
